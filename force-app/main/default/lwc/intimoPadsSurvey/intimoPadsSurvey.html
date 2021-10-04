@@ -1,0 +1,142 @@
+<template>
+    <lightning-layout>
+        <lightning-layout-item><p class="title">Perfect Store - Intimo Pads</p></lightning-layout-item>
+    </lightning-layout>
+
+    <div class="slds-box slds-m-horizontal_non box">
+        <lightning-layout>
+            <lightning-layout-item size="10">
+                <h3 class="slds-text-heading_medium slds-m-bottom_medium">
+                    1. Is there a full size distribution of the following pads?
+                </h3>
+            </lightning-layout-item>
+        </lightning-layout>
+        <br/>
+        <lightning-layout>
+                <lightning-layout-item size="4">
+                    <b>a. Low flow intimo pads? (1pt)</b> <br/>
+                    <lightning-button-group>
+                        <lightning-button label="Yes"></lightning-button>
+                        <lightning-button label="No"></lightning-button>
+                    </lightning-button-group>                
+                </lightning-layout-item>
+        </lightning-layout>
+        <br/>
+        <lightning-layout>
+                <lightning-layout-item size="4">
+                    <b>b. Maxi intimo pads? (1pt)</b> <br/>
+                    <lightning-button-group>
+                        <lightning-button label="Yes"></lightning-button>
+                        <lightning-button label="No"></lightning-button>
+                    </lightning-button-group>                
+                </lightning-layout-item>
+        </lightning-layout>
+        <br/>
+        <lightning-layout>
+            <lightning-layout-item size="4">
+                <b>c. Ultra thin intimo pads? (0.5pt)</b> <br/>
+                <lightning-button-group>
+                    <lightning-button label="Yes"></lightning-button>
+                    <lightning-button label="No"></lightning-button>
+                </lightning-button-group>                
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+
+
+    <div class="slds-box slds-m-horizontal_non box">
+        <lightning-layout>
+            <lightning-layout-item size="10">
+                <h3 class="slds-text-heading_medium slds-m-bottom_medium">
+                    2. Is intimo pads on the right side of Always? Please attach the layout photo (2pt).
+                </h3>
+            </lightning-layout-item>
+        </lightning-layout>
+
+        <lightning-layout>
+                <lightning-layout-item size="4">
+                    <lightning-button-group>
+                        <lightning-button label="Yes"></lightning-button>
+                        <lightning-button label="No"></lightning-button>
+                    </lightning-button-group>                
+                </lightning-layout-item>
+        </lightning-layout>
+        <br/>
+        <lightning-layout>
+                <lightning-layout-item size="4">
+                    <lightning-file-upload label="Attachment" name="fileUploader" accept={attachmentAcceptedFormats} multiple>
+            </lightning-file-upload>                        
+                </lightning-layout-item>
+        </lightning-layout> 
+    </div>           
+
+    <div class="slds-box slds-m-horizontal_non box">
+            <lightning-layout>
+                <lightning-layout-item size="10">
+                    <h3 class="slds-text-heading_medium slds-m-bottom_medium">
+                        3. Is there at least 30% of Intimo's share of shelf? (2pt)
+                    </h3>
+                </lightning-layout-item>
+            </lightning-layout>
+
+            <lightning-layout>
+                <lightning-layout-item size="4">
+                    <lightning-formatted-url value="Learn" label="Learn how to calculate." target="_blank" ></lightning-formatted-url>
+                </lightning-layout-item>
+            </lightning-layout>
+
+            <lightning-layout>
+                <lightning-layout-item size="4">
+                    <lightning-button-group>
+                        <lightning-button label="Yes"></lightning-button>
+                        <lightning-button label="No"></lightning-button>
+                    </lightning-button-group>                
+                </lightning-layout-item>
+            </lightning-layout>
+
+            <br/>
+            <lightning-layout>
+                <lightning-layout-item size="10">
+                    <h3 class="slds-text-heading_medium slds-m-bottom_medium">
+                        4. What is the exact share of shelf of intimo pads? (2pt)
+                    </h3>
+                </lightning-layout-item>
+            </lightning-layout>
+
+            <lightning-layout>
+                <lightning-layout-item size="4">
+                    <lightning-textarea name="shareOfShelf" label="" placeholder="Edit Here the share of shelf percentage..."></lightning-textarea>
+                </lightning-layout-item>
+            </lightning-layout>
+            <br/>                      
+    </div>            
+
+    <div class="slds-box slds-m-horizontal_non box">
+        <lightning-layout>
+            <lightning-layout-item size="10">
+                <h3 class="slds-text-heading_medium slds-m-bottom_medium">
+                    5. Is there a back panel with Ultra Thin Intimo pads? (3 pts)
+                </h3>
+            </lightning-layout-item>
+        </lightning-layout>
+
+        <lightning-layout>
+            <lightning-layout-item size="4">
+                <b>c. Ultra thin intimo pads?</b> <br/>
+                <lightning-button-group>
+                    <lightning-button label="Yes"></lightning-button>
+                    <lightning-button label="No"></lightning-button>
+                </lightning-button-group>                
+            </lightning-layout-item>
+        </lightning-layout>
+        <br/>                      
+    </div>
+    <lightning-layout>            
+        <lightning-layout-item class="save-button">
+            <lightning-button variant="neutral" label="Back" title="Primary action" onclick={handleNavigateBack} ></lightning-button>
+        </lightning-layout-item>
+        <lightning-layout-item class="save-button">
+            <lightning-button variant="brand" label="Next" title="Primary action" onclick={handleNavigate} class="slds-m-left_x-small"></lightning-button>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>

@@ -1,0 +1,18 @@
+.container {
+    background: white;
+    padding: 8px;
+    text-align: center;
+    max-height: 480px;
+}
+
+.container-button {
+    background: white;
+    padding: 8px;
+    max-height: 480px;
+    overflow-y: scroll;
+}
+
+.score-title {
+    width: 400px; 
+    height: 60px
+}

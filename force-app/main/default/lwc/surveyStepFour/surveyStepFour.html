@@ -1,0 +1,40 @@
+<template>
+    <lightning-layout class="header-image">
+        <lightning-layout-item size="12">
+            <img src="https://i.postimg.cc/v8CL2PQR/step4.png" style="width: 100%"/>
+        </lightning-layout-item>
+    </lightning-layout>
+
+    <div class="slds-box slds-p-around_none slds-m-top_x-small slds-m-bottom_medium slds-m-horizontal_non container">    
+
+        <div class="slds-align_absolute-center">
+            <lightning-layout>
+                <lightning-layout-item size="12">
+                    <h1 class="slds-text-heading_medium slds-m-bottom_medium">
+                            Congratulations!
+                    </h1>
+                    </lightning-layout-item>
+                </lightning-layout>    
+        </div>
+
+        <div class="slds-align_absolute-center">
+            <lightning-layout>
+                <lightning-layout-item size="12">
+                    <h3 class="message">
+                            Your Perfect Store survey was sent successfully
+                    </h3>
+                    </lightning-layout-item>
+                </lightning-layout>    
+        </div>
+        <br/>
+
+        <div class="slds-align_absolute-center">
+            <lightning-layout>
+                <lightning-layout-item class="save-button">
+                    <lightning-button variant="brand" label="Exit" title="Primary action" onclick={handleNavigateBack} class="slds-m-left_x-small"></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </div>
+</template>
+

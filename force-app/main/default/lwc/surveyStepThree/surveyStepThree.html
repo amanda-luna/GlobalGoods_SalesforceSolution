@@ -1,0 +1,43 @@
+<template>
+    <lightning-layout class="header-image">
+        <lightning-layout-item size="12">
+            <img src="https://i.postimg.cc/gchmb5HG/step3.png" style="width: 100%"/>
+        </lightning-layout-item>
+    </lightning-layout>
+
+    <div class="slds-box slds-p-around_none slds-m-top_x-small slds-m-bottom_medium slds-m-horizontal_non container">    
+        <div class="slds-text-longform slds-align_absolute-center">
+            <lightning-layout>
+                <lightning-layout-item size="12">
+                    <div 
+                    class="slds-m-top_medium slds-m-bottom_medium slds-theme_success slds-theme_alert-texture slds-truncate slds-align_absolute-center slds-text-align_center slds-text-heading_large score-title">
+                            Perfect
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+        <br/>
+
+        <div class="slds-align_absolute-center">
+            <lightning-layout>
+                <lightning-layout-item size="12">
+                    <h2 class="slds-text-heading_medium slds-m-bottom_medium">
+                            Score: 15/20
+                    </h2>
+                </lightning-layout-item>
+            </lightning-layout>    
+        </div>
+
+        <div class="slds-align_absolute-center">
+            <lightning-layout>
+                <lightning-layout-item class="save-button">
+                    <lightning-button variant="neutral" label="Back" title="Primary action" onclick={handleNavigateBack} ></lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item class="save-button">
+                    <lightning-button variant="brand" label="Send" title="Primary action" onclick={handleNavigate} class="slds-m-left_x-small"></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </div>
+</template>
+

@@ -1,0 +1,37 @@
+<template>
+    <lightning-layout class="header-image">
+        <lightning-layout-item size="12">
+            <img src="https://i.postimg.cc/yYZjNFNz/step1.png" style="width: 100%"/>
+        </lightning-layout-item>
+    </lightning-layout>
+    
+    <div class="slds-box slds-p-around_none slds-m-top_x-small slds-m-bottom_medium slds-m-horizontal_non">
+        <div class="slds-box slds-m-horizontal_non">
+            <lightning-layout>
+                    <!-- Salesforce layout items size are divided between 1-12 -->
+                    <lightning-layout-item size="4">
+                        <lightning-combobox name="Account" label="Account" options={accountOptions}></lightning-combobox>
+                    </lightning-layout-item>
+            </lightning-layout>
+
+            <lightning-layout>
+                    <lightning-layout-item size="4">
+                        <lightning-combobox name="City" label="City" options={cityOptions}></lightning-combobox>
+                    </lightning-layout-item>
+            </lightning-layout>
+
+            <lightning-layout>
+                <lightning-layout-item size="4">
+                    <lightning-combobox name="Store" label="Store" options={storeOptions}></lightning-combobox>
+                </lightning-layout-item>
+            </lightning-layout>
+
+            <lightning-layout class="next-button">
+                <lightning-layout-item size="2">
+                    <lightning-button variant="brand" label="Next" title="Primary action" onclick={handleNavigate} class="slds-m-left_x-small"></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </div>
+</template>
+
